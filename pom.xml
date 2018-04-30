@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.tango</groupId>
+  <artifactId>dubbot</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>pom</packaging>
+  
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <spring-boot.version>1.5.8.RELEASE</spring-boot.version>
+        <dubbo-spring-boot>1.0.0</dubbo-spring-boot>
+    </properties>
+  
+  <modules>
+    <module>dubbot-provider</module>
+    <module>dubbot-api</module>
+  </modules>
+  
+  
+</project>
