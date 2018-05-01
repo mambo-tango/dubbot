@@ -15,6 +15,7 @@
   <modules>
     <module>dubbot-provider</module>
     <module>dubbot-api</module>
+    <module>dubbot-consummer-plugin</module>
   </modules>
   
   
