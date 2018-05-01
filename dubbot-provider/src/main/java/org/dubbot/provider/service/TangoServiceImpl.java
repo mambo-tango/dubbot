@@ -6,6 +6,7 @@ import org.slf4j.LoggerFactory;
 
 import com.alibaba.dubbo.config.annotation.Service;
 
+
 @Service(version = "1.0.0")
 public class TangoServiceImpl implements TangoService {
 

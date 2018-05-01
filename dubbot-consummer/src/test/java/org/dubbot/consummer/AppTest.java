@@ -1,4 +1,4 @@
-package org.dubbot.consummer.plugin;
+package org.dubbot.consummer;
 
 import junit.framework.Test;
 import junit.framework.TestCase;
