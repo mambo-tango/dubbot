@@ -17,10 +17,11 @@ public class DubboTConsummerApp {
         // 启动嵌入式的 Tomcat 并初始化 Spring 环境及其各 Spring 组件
         ConfigurableApplicationContext run = SpringApplication.run(DubboTConsummerApp.class, args);
         TangoServiceConsummerImpl rsc = run.getBean(TangoServiceConsummerImpl.class);
-        for (int i = 0; i < 10; i++) {
-            LOGGER.info("result -----> "+rsc.getDetailFromRedis("811841438978"+i));
+        for (int i = 1; i <= 1000; i++) {
+            int param =  (int) (Math.random() * 5) +1;;
+            LOGGER.info("param: "+param+" result -----> "+rsc.getDetailFromRedis(param));
             try {
-                Thread.sleep(5000);
+                Thread.sleep(2000);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             } 
