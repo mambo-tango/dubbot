@@ -2,8 +2,8 @@ package org.dubbot.consummer.dubbo;
 
 import java.util.List;
 
-import org.dubbot.api.model.TangoModel;
 import org.dubbot.api.service.TangoService;
+import org.dubbot.plugin.cache.TangoModel;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 @Component

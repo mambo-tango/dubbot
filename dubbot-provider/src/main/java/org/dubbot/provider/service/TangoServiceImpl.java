@@ -2,8 +2,8 @@ package org.dubbot.provider.service;
 
 import java.util.List;
 
-import org.dubbot.api.model.TangoModel;
 import org.dubbot.api.service.TangoService;
+import org.dubbot.plugin.cache.TangoModel;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
