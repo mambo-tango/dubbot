@@ -12,4 +12,6 @@ public interface TangoService {
      * @return
      */
     List<TangoModel> helloTango(Integer key);
+    
+    String helloTango2(String key);
 }

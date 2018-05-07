@@ -14,12 +14,10 @@ public class TangoCache implements Cache{
     
 
     public TangoCache(URL url) {
-//        if(dataCache == null) {
             dataCache = CacheBuilder.newBuilder()
                     .maximumSize(500) //最大缓存数量
-                    .expireAfterWrite(30, TimeUnit.SECONDS) //30分钟内过期，重新从数据库load
+                    .expireAfterWrite(30, TimeUnit.MINUTES) //30分钟内过期，重新从数据库load
                     .build();
-//        }
     }
     
     @Override
@@ -32,16 +30,6 @@ public class TangoCache implements Cache{
     public Object get(Object key) {
         Object obj = null;
         obj = dataCache.getIfPresent(key);
-//      try {
-//          obj = dataCache.get(key, new Callable<Object>() {
-//              @Override
-//              public Object call() throws Exception {
-//                  return null;
-//              }
-//          });
-//      } catch (ExecutionException e) {
-//          e.printStackTrace();
-//      }
       
       return obj;
     }

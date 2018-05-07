@@ -16,4 +16,10 @@ public class TangoServiceConsummerImpl {
         System.out.println("======获取 "+results.size()+"个结果======");
         return "SUCCESS";
     }
+    
+    public String helloTango2(Integer shipId) {
+        String result = tangoService.helloTango2(shipId+"");
+        System.out.println("======tango2获取 "+result+" ======");
+        return "success";
+    }
 }

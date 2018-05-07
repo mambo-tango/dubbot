@@ -18,8 +18,10 @@ public class DubboTConsummerApp {
         ConfigurableApplicationContext run = SpringApplication.run(DubboTConsummerApp.class, args);
         TangoServiceConsummerImpl rsc = run.getBean(TangoServiceConsummerImpl.class);
         for (int i = 1; i <= 100; i++) {
-            int param =  (int) (Math.random() * 2) +1;
-            LOGGER.info("param: "+param+" result -----> "+rsc.getDetailFromRedis(param));
+//            int param =  (int) (Math.random() * 2) +1;
+            int param =1;
+            rsc.getDetailFromRedis(param);
+            rsc.helloTango2(param);
             try {
                 Thread.sleep(2000);
             } catch (InterruptedException e) {

@@ -1,5 +1,6 @@
 package org.dubbot.provider.service;
 
+import java.util.Date;
 import java.util.List;
 
 import org.dubbot.api.service.TangoService;
@@ -16,7 +17,7 @@ public class TangoServiceImpl implements TangoService {
     private static final Logger LOGGER = LoggerFactory.getLogger(TangoServiceImpl.class);
     @Override
     public List<TangoModel> helloTango(Integer key) {
-        LOGGER.info("服务端接收到数据 shipId：" + key);
+        LOGGER.info("helloTango 服务端接收到数据 shipId：" + key);
         List<TangoModel> list = Lists.newArrayList();
         switch(key) {
             case 1:
@@ -75,5 +76,13 @@ public class TangoServiceImpl implements TangoService {
         }
         return list;
     }
+    
+    @Override
+    public String helloTango2(String key) {
+        LOGGER.info("helloTango2 服务端接收到数据 key：" + key);
+        return "tango2_" + new Date();
+    }
+    
+    
 
 }

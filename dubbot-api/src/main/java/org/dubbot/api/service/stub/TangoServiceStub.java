@@ -39,4 +39,9 @@ public class TangoServiceStub implements TangoService{
         return null;
     }
 
+    @Override
+    public String helloTango2(String key) {
+        return null;
+    }
+
 }
